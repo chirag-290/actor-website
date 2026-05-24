@@ -15,7 +15,7 @@ const About = () => {
           className="lg:w-1/2"
         >
           <h2 className="font-bebas text-5xl md:text-7xl text-heading mb-8 leading-[0.9]">
-            HELLO, I'M <br /> KAARTIKAY MUKUL MEHTA
+            HELLO
           </h2>
           <div className="space-y-6 text-lg md:text-xl text-white/70 font-light leading-relaxed">
             <p>

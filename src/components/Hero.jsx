@@ -25,7 +25,7 @@ const Hero = () => {
     }
   };
 
-  const words = ["KAARTIKAY", "MUKUL", "MEHTA."];
+  const words = ["KAARTIKAY", "MUKUL", "MEHTA"];
 
   return (
     <section className="relative min-h-screen flex flex-col justify-center px-6 lg:px-12 pt-20 overflow-hidden">
@@ -54,21 +54,11 @@ const Hero = () => {
             >
               {words.map((word, wordIndex) => (
                 <div key={wordIndex} className="flex overflow-hidden pb-2 lg:pb-4">
-                  {word.split('').map((char, index) => {
-                    if (char === '.') {
-                      return (
-                        <motion.span key={index} variants={letterVariants} className="text-[14vw] lg:text-[7.5vw] text-accent relative">
-                          <span className="absolute bottom-[10%] left-0 w-[3vw] lg:w-[1.5vw] h-[3vw] lg:h-[1.5vw] bg-accent rounded-full"></span>
-                          <span className="opacity-0">.</span>
-                        </motion.span>
-                      );
-                    }
-                    return (
-                      <motion.span key={index} variants={letterVariants} className="text-[14vw] lg:text-[7.5vw] text-heading">
-                        {char}
-                      </motion.span>
-                    );
-                  })}
+                  {word.split('').map((char, index) => (
+                    <motion.span key={index} variants={letterVariants} className="text-[14vw] lg:text-[7.5vw] text-heading">
+                      {char}
+                    </motion.span>
+                  ))}
                 </div>
               ))}
             </motion.div>
