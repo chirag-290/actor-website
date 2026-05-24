@@ -34,7 +34,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
-        className="absolute top-28 right-6 lg:right-12 text-xs md:text-sm uppercase tracking-widest text-white/50 text-right z-20"
+        className="absolute top-20 lg:top-28 right-6 lg:right-12 text-[10px] md:text-sm uppercase tracking-widest text-white/50 text-right z-20"
       >
         Actor Portfolio <br className="md:hidden" /><span className="hidden md:inline"> | </span>2026
       </motion.div>
@@ -50,10 +50,10 @@ const Hero = () => {
               variants={nameVariants}
               initial="hidden"
               animate="visible"
-              className="flex flex-wrap font-bebas leading-[0.8] tracking-tight gap-x-4 md:gap-x-6"
+              className="flex flex-wrap font-bebas leading-[0.85] tracking-tight gap-x-3 gap-y-2 md:gap-x-6"
             >
               {words.map((word, wordIndex) => (
-                <div key={wordIndex} className="flex overflow-hidden pb-2 lg:pb-4">
+                <div key={wordIndex} className="flex overflow-hidden pb-1 lg:pb-4">
                   {word.split('').map((char, index) => (
                     <motion.span key={index} variants={letterVariants} className="text-[14vw] lg:text-[7.5vw] text-heading">
                       {char}
@@ -138,7 +138,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-8 left-6 lg:left-12 right-6 lg:right-12 flex flex-col md:flex-row justify-between items-start md:items-end gap-4 text-xs md:text-sm tracking-wider text-white/50 border-t border-white/10 pt-6"
+        className="relative mt-16 pb-8 lg:absolute lg:mt-0 lg:pb-0 lg:bottom-8 left-0 lg:left-12 right-0 lg:right-12 flex flex-row justify-between items-end text-[10px] sm:text-xs md:text-sm tracking-wider text-white/50 border-t border-white/10 pt-6"
       >
         <div className="flex flex-col md:flex-row gap-2 md:gap-8">
           <a href="https://www.instagram.com/kaartikaymukul?igsh=d29sMGlxemRnYW95" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">@kaartikaymukul</a>
