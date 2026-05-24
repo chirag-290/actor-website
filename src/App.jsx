@@ -49,8 +49,8 @@ function App() {
         <Info />
         <About />
         <Profile />
-        <ActingWork />
         <Upcoming />
+        <ActingWork />
         <Contact />
       </main>
     </>
