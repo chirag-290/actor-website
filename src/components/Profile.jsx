@@ -5,6 +5,7 @@ const images = [
   { label: 'Portrait 1', span: 'col-span-1 row-span-2', image: '/images/profile1.PNG' },
   { label: 'Action Shot', span: 'col-span-1 row-span-1', image: '/images/profile2.PNG' },
   { label: 'On Set', span: 'col-span-1 row-span-1', image: '/images/profile3.JPG' },
+  { label: 'Headshot', span: 'col-span-1 row-span-2', image: '/images/profile4.JPG' },
 ];
 
 const Profile = () => {
@@ -38,7 +39,7 @@ const Profile = () => {
             >
               {/* Hover shimmer */}
               <div className="absolute inset-0 bg-gradient-to-br from-white/0 via-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10"></div>
-              
+
               {/* Corner accents on hover */}
               <div className="absolute top-0 left-0 w-8 h-[1px] bg-white/60 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-10"></div>
               <div className="absolute top-0 left-0 h-8 w-[1px] bg-white/60 scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top z-10"></div>
@@ -46,9 +47,9 @@ const Profile = () => {
               <div className="absolute bottom-0 right-0 h-8 w-[1px] bg-white/60 scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom z-10"></div>
 
               {/* Image */}
-              <img 
-                src={img.image} 
-                alt={img.label} 
+              <img
+                src={img.image}
+                alt={img.label}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
             </motion.div>

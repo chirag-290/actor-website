@@ -39,6 +39,7 @@ const ActingWork = () => {
       title: "ACCA India",
       link: "https://youtu.be/g5XeNwuqjuE?si=d6wh8_l6Mb5RPJzT",
       description: "Brand campaign for ACCA India, a global professional accounting body.",
+      image: "/images/ASSC.png",
       imageLabel: "ACCA India Ad Still"
     },
   ];

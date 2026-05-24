@@ -25,8 +25,7 @@ const Hero = () => {
     }
   };
 
-  const line1 = "KAARTIKAY".split('');
-  const line2 = "MEHTA.".split('');
+  const words = ["KAARTIKAY", "MUKUL", "MEHTA."];
 
   return (
     <section className="relative min-h-screen flex flex-col justify-center px-6 lg:px-12 pt-20 overflow-hidden">
@@ -51,36 +50,27 @@ const Hero = () => {
               variants={nameVariants}
               initial="hidden"
               animate="visible"
-              className="flex overflow-hidden font-bebas leading-[0.8] tracking-tight"
+              className="flex flex-wrap font-bebas leading-[0.8] tracking-tight gap-x-4 md:gap-x-6"
             >
-              {line1.map((char, index) => (
-                <motion.span key={index} variants={letterVariants} className="text-[14vw] lg:text-[9vw] text-heading">
-                  {char}
-                </motion.span>
+              {words.map((word, wordIndex) => (
+                <div key={wordIndex} className="flex overflow-hidden pb-2 lg:pb-4">
+                  {word.split('').map((char, index) => {
+                    if (char === '.') {
+                      return (
+                        <motion.span key={index} variants={letterVariants} className="text-[14vw] lg:text-[7.5vw] text-accent relative">
+                          <span className="absolute bottom-[10%] left-0 w-[3vw] lg:w-[1.5vw] h-[3vw] lg:h-[1.5vw] bg-accent rounded-full"></span>
+                          <span className="opacity-0">.</span>
+                        </motion.span>
+                      );
+                    }
+                    return (
+                      <motion.span key={index} variants={letterVariants} className="text-[14vw] lg:text-[7.5vw] text-heading">
+                        {char}
+                      </motion.span>
+                    );
+                  })}
+                </div>
               ))}
-            </motion.div>
-            
-            <motion.div
-              variants={nameVariants}
-              initial="hidden"
-              animate="visible"
-              className="flex overflow-hidden font-bebas leading-[0.8] tracking-tight ml-2 md:ml-8"
-            >
-              {line2.map((char, index) => {
-                if (char === '.') {
-                  return (
-                    <motion.span key={index} variants={letterVariants} className="text-[14vw] lg:text-[9vw] text-accent relative">
-                      <span className="absolute bottom-[10%] left-0 w-[3vw] lg:w-[2vw] h-[3vw] lg:h-[2vw] bg-accent rounded-full"></span>
-                      <span className="opacity-0">.</span>
-                    </motion.span>
-                  );
-                }
-                return (
-                  <motion.span key={index} variants={letterVariants} className="text-[14vw] lg:text-[9vw] text-heading">
-                    {char}
-                  </motion.span>
-                );
-              })}
             </motion.div>
           </div>
 
@@ -161,7 +151,7 @@ const Hero = () => {
         className="absolute bottom-8 left-6 lg:left-12 right-6 lg:right-12 flex flex-col md:flex-row justify-between items-start md:items-end gap-4 text-xs md:text-sm tracking-wider text-white/50 border-t border-white/10 pt-6"
       >
         <div className="flex flex-col md:flex-row gap-2 md:gap-8">
-          <a href="https://instagram.com/kaartikay_mehta" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">@kaartikay_mehta</a>
+          <a href="https://www.instagram.com/kaartikaymukul?igsh=d29sMGlxemRnYW95" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">@kaartikaymukul</a>
           <span>Mumbai, India</span>
         </div>
         <div className="flex flex-col md:flex-row gap-2 md:gap-8 text-right">

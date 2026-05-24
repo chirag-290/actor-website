@@ -73,14 +73,14 @@ const Contact = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              href="https://instagram.com/kaartikay_mehta"
+              href="https://www.instagram.com/kaartikaymukul?igsh=d29sMGlxemRnYW95"
               target="_blank"
               rel="noreferrer"
               className="group flex items-center gap-3 text-xl md:text-3xl font-light text-white/80 hover:text-white transition-colors"
             >
               <FiInstagram className="text-accent opacity-50 group-hover:opacity-100 transition-opacity" />
               <span className="relative">
-                @kaartikay_mehta
+                @kaartikaymukul
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
               </span>
             </motion.a>

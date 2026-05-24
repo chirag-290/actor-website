@@ -30,14 +30,14 @@ const Instagram = () => {
             </p>
           </div>
           <a
-            href="https://instagram.com/kaartikay_mehta"
+            href="https://www.instagram.com/kaartikaymukul?igsh=d29sMGlxemRnYW95"
             target="_blank"
             rel="noreferrer"
             className="group flex items-center gap-3 text-white/70 hover:text-white transition-colors text-lg"
           >
             <FiInstagram className="text-2xl" />
             <span className="relative">
-              @kaartikay_mehta
+              @kaartikaymukul
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </span>
             <FiArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
@@ -49,7 +49,7 @@ const Instagram = () => {
           {instagramPosts.map((post, index) => (
             <motion.a
               key={index}
-              href="https://instagram.com/kaartikay_mehta"
+              href="https://www.instagram.com/kaartikaymukul?igsh=d29sMGlxemRnYW95"
               target="_blank"
               rel="noreferrer"
               initial={{ opacity: 0, y: 30 }}

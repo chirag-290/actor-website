@@ -6,7 +6,6 @@ import About from './components/About';
 import Profile from './components/Profile';
 import ActingWork from './components/ActingWork';
 import Upcoming from './components/Upcoming';
-import Instagram from './components/Instagram';
 import Contact from './components/Contact';
 
 function App() {
@@ -52,7 +51,6 @@ function App() {
         <Profile />
         <ActingWork />
         <Upcoming />
-        <Instagram />
         <Contact />
       </main>
     </>
