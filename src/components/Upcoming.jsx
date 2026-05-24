@@ -39,8 +39,12 @@ const Upcoming = () => {
           className="block group cursor-pointer"
         >
           <div className="border border-white/10 bg-white/[0.02] rounded-sm overflow-hidden">
-            {/* Video Thumbnail Placeholder */}
+            {/* Video Thumbnail */}
             <div className="relative w-full h-[40vh] md:h-[50vh] bg-black border-b border-white/10 flex items-center justify-center overflow-hidden">
+              {/* Background image */}
+              <img src="/images/upcoming.jpg" alt="Adarsh Baal Vidyalaya" className="absolute inset-0 w-full h-full object-cover object-top" />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-500"></div>
+
               {/* Play button */}
               <div className="relative z-10 flex items-center justify-center w-20 h-20 md:w-28 md:h-28 rounded-full border-2 border-white/30 group-hover:border-white/80 group-hover:bg-white/10 transition-all duration-500">
                 <FiPlay className="text-white text-2xl md:text-4xl ml-1 group-hover:scale-110 transition-transform" />
@@ -50,7 +54,7 @@ const Upcoming = () => {
               <div className="absolute w-20 h-20 md:w-28 md:h-28 rounded-full border border-white/20 animate-ping opacity-10"></div>
 
               {/* Corner tag */}
-              <div className="absolute top-6 right-6 bg-white/10 backdrop-blur-sm px-4 py-2 rounded text-xs uppercase tracking-widest text-white/70">
+              <div className="absolute top-6 right-6 bg-white/10 backdrop-blur-sm px-4 py-2 rounded text-xs uppercase tracking-widest text-white/70 z-10">
                 Watch Trailer
               </div>
             </div>

@@ -25,15 +25,6 @@ const ActingWork = () => {
     },
   ];
 
-  const tvWork = [
-    {
-      title: "Uddariyan",
-      platform: "Colors TV",
-      link: "https://youtu.be/ymnQi4tkD2E?si=5Ih4zCCqEcB2oOhS",
-      description: "A popular Colors TV series following the intertwined stories of three women navigating love, ambition, and societal expectations.",
-      imageLabel: "Uddariyan Still"
-    }
-  ];
 
   const advertisements = [
     {
@@ -41,6 +32,7 @@ const ActingWork = () => {
       director: "Akshay Sundher",
       link: "https://youtu.be/zJtCb629Mtc?si=abEu78suK0CrjAdY",
       description: "National commercial for Air India, directed by Akshay Sundher.",
+      image: "/images/air-india.png",
       imageLabel: "Air India Ad Still"
     },
     {
@@ -162,24 +154,7 @@ const ActingWork = () => {
           </div>
         </div>
 
-        {/* TV Work */}
-        <div className="mb-20">
-          <motion.h3
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-xl font-medium text-white mb-10 uppercase tracking-widest border-b border-white/20 pb-4"
-          >
-            Television
-          </motion.h3>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {tvWork.map((item, index) => (
-              <FilmCard key={index} film={item} index={index} />
-            ))}
-          </div>
-        </div>
 
         {/* Advertisements */}
         <div>

@@ -5,9 +5,9 @@ const About = () => {
   return (
     <section id="about" className="py-24 px-6 lg:px-12 bg-background">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
-        
+
         {/* Left Text Content */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -15,7 +15,7 @@ const About = () => {
           className="lg:w-1/2"
         >
           <h2 className="font-bebas text-5xl md:text-7xl text-heading mb-8 leading-[0.9]">
-            HELLO, I'M<br />KAARTIKAY MEHTA
+            HELLO
           </h2>
           <div className="space-y-6 text-lg md:text-xl text-white/70 font-light leading-relaxed">
             <p>
@@ -28,7 +28,7 @@ const About = () => {
         </motion.div>
 
         {/* Right Images (Placeholders) */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
