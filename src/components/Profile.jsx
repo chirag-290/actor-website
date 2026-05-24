@@ -5,7 +5,8 @@ const images = [
   { label: 'Portrait 1', span: 'col-span-1 row-span-2', image: '/images/profile1.PNG' },
   { label: 'Action Shot', span: 'col-span-1 row-span-1', image: '/images/profile2.PNG' },
   { label: 'On Set', span: 'col-span-1 row-span-1', image: '/images/profile3.JPG' },
-  { label: 'Headshot', span: 'col-span-1 row-span-2', image: '/images/profile4.JPG' },
+  { label: 'Headshot', span: 'col-span-1 row-span-2', image: '/images/profile5.JPG' },
+  { label: 'Studio', span: 'col-span-1 row-span-1', image: '/images/profile4.JPG' },
 ];
 
 const Profile = () => {
