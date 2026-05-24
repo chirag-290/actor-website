@@ -70,11 +70,11 @@ const Upcoming = () => {
                     Directed by <span className="text-white/90">Himank Gaur</span> & <span className="text-white/90">Biswapati Sarkar</span>
                   </p>
                 </div>
-                <div className="flex flex-col items-end gap-2">
+                <div className="flex flex-row items-center gap-3 mt-2 md:mt-0">
                   <span className="text-xs uppercase tracking-widest text-black bg-white px-4 py-2 rounded font-semibold">
                     Prime Video
                   </span>
-                  <FiExternalLink className="text-white/30 group-hover:text-white transition-colors text-xl mt-2" />
+                  <FiExternalLink className="text-white/30 group-hover:text-white transition-colors text-xl" />
                 </div>
               </div>
             </div>
