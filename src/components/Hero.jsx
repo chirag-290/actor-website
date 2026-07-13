@@ -82,7 +82,7 @@ const Hero = () => {
             className="mt-10 flex flex-col sm:flex-row gap-6"
           >
             <a 
-              href="https://youtu.be/6Pr9weNJUws?si=BglGZdiMUz4DgLQx" 
+              href="https://www.youtube.com/watch?v=9QDfABKdqe0" 
               target="_blank" 
               rel="noreferrer"
               className="group flex items-center gap-3 px-8 py-4 bg-white text-black font-semibold text-sm tracking-widest uppercase hover:bg-white/90 transition-all rounded-sm w-fit"

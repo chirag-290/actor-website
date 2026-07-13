@@ -28,7 +28,7 @@ const Upcoming = () => {
 
         {/* Featured Upcoming Project */}
         <motion.a
-          href="https://youtu.be/6Pr9weNJUws?si=BglGZdiMUz4DgLQx"
+          href="https://youtu.be/9QDfABKdqe0?si=TJFNF_P5DVZJ59It"
           target="_blank"
           rel="noreferrer"
           initial={{ opacity: 0, y: 50 }}
