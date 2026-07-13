@@ -19,7 +19,7 @@ const About = () => {
           </h2>
           <div className="space-y-6 text-lg md:text-xl text-white/70 font-light leading-relaxed">
             <p>
-              I'm Kaartikay Mukul Mehta, a Mumbai-based actor with over five years of theatre experience, where I've built a strong foundation in performance and character work.
+              I'm Kaartikay Mukul Mehta, a Mumbai-based actor with over Six years of theatre experience, where I've built a strong foundation in performance and character work.
             </p>
             <p>
               I'm deeply passionate about acting and constantly strive to grow, bringing honesty and authenticity to every role I take on.
@@ -37,7 +37,7 @@ const About = () => {
         >
           <div className="w-1/2 h-full border border-white/20 bg-black flex items-center justify-center relative overflow-hidden group">
             <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-            <img src="/images/headshot1.JPG" alt="Headshot 1" className="absolute inset-0 w-full h-full object-cover" />
+            <img src="/images/headshot3.JPG" alt="Headshot 1" className="absolute inset-0 w-full h-full object-cover" />
           </div>
           <div className="w-1/2 h-full border border-white/20 bg-black flex items-center justify-center relative overflow-hidden group mt-12">
             <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
